@@ -16,7 +16,6 @@
 
         @media (max-width: $tablet) {
             display: none;
-
         }
     }
 
@@ -27,12 +26,32 @@
             display: block;
             width: 32px;
             height: 32px;
-            background: red;
             position: relative;
             z-index: 100;
         }
     }
+    &__nav-icon{
+        @media (max-width: $tablet){
+            width: 32px;
+            height: 2px;
+            position: absolute;
+            top: 4px;
+            right: 0px;
+            background: black;
+        }
 
+    }
+    .second,.third{
+        @media (max-width: $tablet){
+            top: 16px;
+        }
+    }
+    .last{
+        @media (max-width: $tablet){
+            top: 28px;
+        }
+    }
+    
     &__nav-link {
         font-weight: 400;
         font-size: 13px;
@@ -50,7 +69,7 @@
             border-bottom: 1px solid $color-black;
         }
 
-        &--active {
+        &:active {
             border-bottom: 1px solid $color-black;
         }
     }
