@@ -22,7 +22,7 @@ $sub-fonts: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 23px;
     line-height: 38px;
-    color: $grey2;
+    color: $grey700;
 }
 .h4{
     font-family: $sub-fonts;
@@ -30,7 +30,7 @@ $sub-fonts: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 19px;
     line-height: 32px;
-    color: $grey2;
+    color: $grey700;
 }
 .h6 {
     font-family: $sub-fonts;
@@ -48,23 +48,4 @@ $sub-fonts: 'Lato', sans-serif;
     line-height: 20px;
     letter-spacing: 0.1em;
     color: $color-black;
-}
-button{
-    border: none;
-    background: transparent;
-    display: block;
-    font-family: $sub-fonts;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 27px;
-    text-align: center;
-    color: #FFFFFF;
-    background: $grey2;
-    border-radius: 10px;
-    padding: 8px 34px;
-    cursor: pointer;
-    &:hover{
-        background: #252525;
-    }
 }

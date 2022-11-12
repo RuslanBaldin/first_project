@@ -1,0 +1,49 @@
+.contact{
+    &__container{
+        margin-top: 131px;
+    }
+    &__row-title {
+        display: flex;
+        justify-content: space-between;
+
+    } 
+    &__title{
+        max-width: 35%;
+    }
+    &__item{
+        max-width: 45%;
+    }
+
+    &__row-info{
+        display: flex;
+        justify-content: space-between;
+        margin:128px 0px;
+    }
+    &__information{
+        max-width: 35%;
+    }
+    &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-top: 24px;
+    }
+    &__list-adres{
+        color: $grey700;
+    }
+    &__list-text{
+        display: inline;
+        margin-left: 10px;
+    }
+    &__sub-title{
+    margin: 69px 0px 25px 0px;
+    }
+    &__form{
+        max-width: 45%;
+    }
+    &__icon{
+        display: flex;
+        gap: 24px;
+    }
+}
+

@@ -11,10 +11,12 @@
 // Common section
 @import './common/header.scss';
 @import './common/footer.scss';
+@import './common/button.scss';
 // Common section End
 
 // Pages Style
 @import './pages/home.scss';
 @import './pages/about.scss';
-@import './pages/works.scss'
+@import './pages/works.scss';
+@import './pages/contact.scss';
 // Pages Style End
