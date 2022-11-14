@@ -103,13 +103,31 @@
                                 </li>
                             </ul>
                         </div>
-                        <form class="contact__form">
+                        <form class="contact__form form">
+                            <div class="form__fields">
+                                <span class="form__title">Name*</span>
+                                <input tabindex="1" class="form__inpt" type="text" placeholder="Walter Moss" required>
+                            </div>
+                            <div class="form__fields">
+                                <span class="form__title">Email*</span>
+                                <input tabindex="2" class="form__inpt" type="email" placeholder="Info@manifest.com" required>
+                            </div>
 
                             <div class="form__fields">
-                                <span>Name</span>
-                                <input type="text">
+                                <select tabindex="3" class="form__inpt" name="" id="" aria-placeholder="Reason for contact" >
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
                             </div>
-                            <button class="button button--icon">Send</button>
+                            <div class="form__fields">
+                                <span class="form__title">Message*</span>
+                                <input tabindex="4" class="form__inpt" type="text" placeholder="Hi there ..." required>
+                            </div>
+                            <div>
+                                <button tabindex="5" class="button button--icon">Send</button>
+                            </div>
                         </form>
                     </div>
                 </div>

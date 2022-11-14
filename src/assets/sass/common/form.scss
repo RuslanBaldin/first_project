@@ -1,0 +1,23 @@
+.form{
+    &__title{
+        font-size: 16px;
+        line-height: 27px;
+        letter-spacing: 0.05em;
+        color: $grey700;
+        display: block;
+    }
+    &__inpt{
+        color: $grey500;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 16px 0px 8px 0px;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid $color-black;
+        &::placeholder{
+            color: $grey500;
+            font-size: 12px;
+            line-height: 20px;
+        }
+    }
+}
