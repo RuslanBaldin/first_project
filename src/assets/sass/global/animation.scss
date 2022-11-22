@@ -1,0 +1,11 @@
+.animation{
+transform: translateX(-760px);
+opacity: 0;
+
+transform: all 1s;
+
+    &__active{
+    transform: translateX(0);
+    opacity: 1;
+    }
+}

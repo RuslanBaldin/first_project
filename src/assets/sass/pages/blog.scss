@@ -1,0 +1,177 @@
+.blog-page{
+
+    .hero{
+        &__container{
+            margin-top: 136px;
+            margin-bottom: 41px;
+        }
+        &__title{
+            margin: 24px 0px 48px 0px;
+            max-width: 640px;
+            @media (max-width: $tablet) {
+                margin: 16px 0px;
+        }
+        }
+        &__title-text{
+            color: $grey500;
+        }
+        &__text-row{
+            display: flex;
+            gap: 39px;
+            margin-bottom: 64px;
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                gap: 8px;
+                margin-bottom: 39px;
+            }
+        }
+    }
+
+    .description{
+
+        &__avatar-row{
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin: 39px 0px 39px 260px;
+            @media (max-width: $tablet) {
+                margin: 39px 0px 45px 0px;
+            }
+        }
+
+        &__image{
+            width: 70px;
+        }
+        &__container-row{
+            display: flex;
+            justify-content: center;
+            gap: 90px;
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+        &__social-networks{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            @media (max-width: $tablet) {
+                flex-direction: row;
+            }
+        }
+
+        &__text-row{
+            max-width: 736px;
+            margin-bottom: 88px;
+            @media (max-width: $tablet) {
+                margin-bottom: 24px;
+            }
+        }
+        &__text{
+            margin-bottom: 32px;
+            color: $color-black;
+
+            &--grey{
+                color: $grey500;
+            }
+            &--border{
+                border-bottom: 2px solid $color-grey;
+                padding-bottom: 16px;
+            }
+            &--list{
+                list-style-type: disc;
+                margin-bottom: 32px;
+                color: $color-black;
+            }
+
+        }
+        &__text-border{
+            border-left: 2px solid $grey500;
+            padding: 0px 0px 32px 64px;
+            margin-bottom: 32px;
+            @media (max-width: $tablet) {
+                padding: 0px 0px 32px 16px;
+            }
+        }
+        &__list{
+            margin-left: 20px;
+            margin-bottom: 66px;
+        }
+
+        .reply{
+            &__container{
+                padding: 0px;
+                margin-bottom: 64px;
+                margin-top: 112px;
+                @media (max-width: $tablet) {
+                    margin-top: 64px;
+                }
+            }
+            &__title{
+                color: $color-black;
+            }
+            &__text{
+                color: $grey500;
+            }
+            &__form{
+                margin-bottom: 104px;
+            }
+
+
+            .form{
+                &__row{
+                    display: flex;
+                    gap: 44px;
+                    justify-content: space-between;
+                    margin-bottom: 48px;
+                    flex-wrap: wrap;
+                }
+                &__fields{
+                    width: 100%;
+                }
+                &__checkbox{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 48px;
+                }
+                &__checkbox-text{
+                    color: $grey500;
+                    margin-left: 10px;
+                }
+            }
+            &__form-btn{
+                padding: 8px 34px;
+                margin-top: 40px ;
+            }
+        }
+        .comments{
+
+            &__title{
+                margin-bottom: 24px;
+            }
+            &__comment-01{
+                display: flex;
+                gap: 24px;
+            }
+            &__avatar-image{
+                width: 70px;
+                height: 70px;
+            }
+            &__description-title{
+                display: inline-block;
+                margin-right: 24px;
+                color: $color-black;
+            }
+            &__description-data{
+                color: $grey500;
+            }
+            &__description-text{
+                margin: 16px 0;
+            }
+            &__description-link{
+                display: inline-block;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
