@@ -1,5 +1,49 @@
-.home {
-    background-color: blue;
-    position: relative;
-
+.home-page{
+    .home-title {
+        &__box{
+            margin: 128px auto;
+        }
+        &__title{
+            max-width: 709px;
+        }
+    }
+    .slider{
+        display: flex;
+        gap:30px;
+        overflow: scroll;
+        justify-content: center;
+        margin-bottom: 128px;
+    
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+        &::-webkit-scrollbar{
+            display: none;
+        }
+    
+        &__cart-image{
+            width: 544px;
+            margin-bottom: 16px;
+        }
+    }
+    .info{
+        &__container{
+            display: flex;
+            gap: 210px;
+        }
+        &__left-arrow{
+            display: inline-block;
+            margin-top: 48px;
+        }
+        &__right-text{
+            &:nth-child(1){
+                margin-bottom: 48px;
+            }
+            &:nth-child(2){
+                margin-bottom: 129px;
+            }
+        }
+        &__link-text{
+            color: $grey500;
+        }
+    }
 }
