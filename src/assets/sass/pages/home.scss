@@ -2,6 +2,9 @@
     .home-title {
         &__box{
             margin: 128px auto;
+            @media (max-width: $tablet) {
+                margin: 73px auto 40px;
+            }
         }
         &__title{
             max-width: 709px;
@@ -13,6 +16,9 @@
         overflow: scroll;
         justify-content: center;
         margin-bottom: 128px;
+        @media (max-width: $tablet) {
+            margin-bottom: 64px;
+        }
     
         -ms-overflow-style: none;
         scrollbar-width: none;
@@ -23,27 +29,83 @@
         &__cart-image{
             width: 544px;
             margin-bottom: 16px;
+            @media (max-width: $tablet) {
+                max-width: 257px;
+            }
         }
     }
     .info{
         &__container{
             display: flex;
             gap: 210px;
+            margin-bottom: 128px;
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                gap: 48px;
+                margin-bottom: 48px;
+            }
+        }
+        &__left-text{
+            @media (max-width: $tablet) {
+                font-size: 19px;
+                line-height: 32px;
+            }
         }
         &__left-arrow{
             display: inline-block;
             margin-top: 48px;
+            @media (max-width: $tablet) {
+                margin-top: 28px;
+            }
         }
         &__right-text{
             &:nth-child(1){
                 margin-bottom: 48px;
             }
-            &:nth-child(2){
-                margin-bottom: 129px;
+        }
+    }
+
+    .latest-posts{
+        &__titel-row{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                gap: 8px;
             }
         }
-        &__link-text{
-            color: $grey500;
+        &__cart-row{
+            display: flex;
+            gap: 34px;
+            margin-bottom: 128px;
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                gap: 48px;
+                margin-bottom: 64px;
+            }
+        }
+        .cart{
+            &__container{
+                display: flex;
+                flex-direction: column;
+            }
+            &__image{
+                width: 360px;
+            }
+            &__discription{
+                display: flex;
+                justify-content: space-between;
+                margin: 24px 0;
+                @media (max-width: $tablet) {
+                    flex-direction: column;
+                    gap: 8px;
+                }
+            }
+            &__title{
+                margin-bottom: 24px;
+                flex: 1 1 auto;
+            }
         }
     }
 }

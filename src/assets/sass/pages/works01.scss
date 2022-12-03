@@ -1,0 +1,81 @@
+.works01-page{
+    .hero{
+        &__container{
+            margin: 130px auto;
+            @media (max-width: $tablet) {
+                margin-top: 74px;
+                margin-bottom: 48px;
+            }
+        }
+        &__text{
+            font-size: 16px;
+            line-height: 24px;
+            letter-spacing: 0.5em;
+            margin-bottom: 48px;
+            @media (max-width: $tablet) {
+                margin-bottom: 39px;
+            }
+        }
+        &__title{
+            margin-bottom: 64px;
+            @media (max-width: $tablet) {
+                margin-bottom: 52px;
+            }
+        }
+    }
+
+    .description{
+        &__container{
+            display: flex;
+            gap: 225px;
+            margin-bottom: 135px;
+            @media (max-width: $tablet) {
+                flex-direction: column;
+                gap: 64px;
+                margin-bottom: 71px;
+            }
+        } 
+        &__container-left{
+            max-width: 50%;
+        }
+        &__sub-title-left{
+            margin-bottom: 40px;
+
+        }
+        &__text{
+            &:nth-child(2){
+                margin-bottom: 46px;
+            }
+        }
+        &__container-right{
+            display: flex;
+            flex-direction: column;
+            max-width: 25%;
+        }
+        }
+    .cart{
+        &__title{
+            margin-bottom: 40px;
+        }
+        &__container{
+            display: flex;
+            flex-direction: column;
+            gap: 82px;
+            margin-bottom: 128px;
+            @media (max-width: $tablet) {
+                gap: 0px;
+                margin-bottom: 64px;
+            }
+        }
+        &__image{
+            margin-bottom: 50px;
+        }
+        &__text{
+            margin-bottom: 46px;
+            @media (max-width: $tablet) {
+                margin-bottom: 64px;
+            }
+        }
+
+    }
+}
