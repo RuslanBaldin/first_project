@@ -8,6 +8,9 @@
     <title>Document</title>
     <!--Шлях до css це відносний шлях не залежить ввід папки-->
     <link rel="stylesheet" href="@@webRoot/bundle.min.css">
+
+    <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -57,25 +60,28 @@
             </section>
         <!--home-title end-->
 
-        <!--slider end-->
-            <section class="slider">
-                <div class="slider__cart">
-                    <img class="slider__cart-image" src="./img/home-img03.jpg" alt="">
-                    <p class="h6 slider__cart-text">Abalone</p>
-                </div>
-                <div class="slider__cart">
-                    <img class="slider__cart-image" src="./img/home-img02.jpg" alt="">
-                    <p class="h6 slider__cart-text">Mixkit Inspo</p>
-                </div>
-                <div class="slider__cart">
-                    <img class="slider__cart-image" src="./img/home-img03.jpg" alt="">
-                    <p class="h6 slider__cart-text">Abalone</p>
-                </div>
-                <div class="slider__cart">
-                    <img class="slider__cart-image" src="./img/home-img02.jpg" alt="">
-                    <p class="h6 slider__cart-text">Mixkit Inspo</p>
-                </div>
-            </section>
+        <!--slider-->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img class="slider__cart-image" src="./img/home-img03.jpg" alt="">
+                <p class="h6 slider__cart-text">Abalone</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__cart-image" src="./img/home-img02.jpg" alt="">
+                <p class="h6 slider__cart-text">Mixkit Inspo</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__cart-image" src="./img/home-img03.jpg" alt="">
+                <p class="h6 slider__cart-text">Abalone</p>
+              </div>
+              <div class="swiper-slide">
+                <img class="slider__cart-image" src="./img/home-img02.jpg" alt="">
+                <p class="h6 slider__cart-text">Mixkit Inspo</p>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
             <!--slider end-->
 
             <!--info-->
@@ -190,13 +196,35 @@
             </p>
         </div>
     </footer>
-
+    
     </div>
     
 
     <!--Обовязково додавати потрібно для JS -->
     <script> var exports = {}; </script>
     <script src="@@webRoot/js/index.js"></script>
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    let swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3.5,
+      spaceBetween: 30,
+      slidesPerGroup: 2,
+      loop: true,
+      centeredSlides: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (index + 1) + "</span>";
+        },
+      },
+    });
+  </script>
 </body>
 
 </html>
